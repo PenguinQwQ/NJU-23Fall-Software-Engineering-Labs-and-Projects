@@ -1,13 +1,10 @@
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/run_opt.dir
-/home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/run_opt_test.dir
-/home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/test.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/edit_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/rebuild_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/list_install_components.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/install.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/install/local.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/CMakeFiles/install/strip.dir
-/home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/CMakeFiles/test.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/CMakeFiles/edit_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/CMakeFiles/rebuild_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/CMakeFiles/list_install_components.dir
@@ -16,7 +13,6 @@
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/CMakeFiles/install/strip.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googlemock/CMakeFiles/gmock.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googlemock/CMakeFiles/gmock_main.dir
-/home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googlemock/CMakeFiles/test.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googlemock/CMakeFiles/edit_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googlemock/CMakeFiles/rebuild_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googlemock/CMakeFiles/list_install_components.dir
@@ -25,7 +21,6 @@
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googlemock/CMakeFiles/install/strip.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googletest/CMakeFiles/gtest.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googletest/CMakeFiles/gtest_main.dir
-/home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googletest/CMakeFiles/test.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googletest/CMakeFiles/edit_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googletest/CMakeFiles/rebuild_cache.dir
 /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/googletest-main/googletest/CMakeFiles/list_install_components.dir

@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -185,19 +175,6 @@ run_opt/fast:
 .PHONY : run_opt/fast
 
 #=============================================================================
-# Target rules for targets named run_opt_test
-
-# Build rule for target.
-run_opt_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_opt_test
-.PHONY : run_opt_test
-
-# fast build rule for target.
-run_opt_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/build
-.PHONY : run_opt_test/fast
-
-#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -249,80 +226,269 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest-main/googletest/CMakeFiles/gtest_main.dir/build.make googletest-main/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/main.cpp.s
+.PHONY : main.cpp.s
 
-src/product.o: src/product.cpp.o
-.PHONY : src/product.o
+src/address.o: src/address.cpp.o
+.PHONY : src/address.o
 
 # target to build an object file
-src/product.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/product.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/product.cpp.o
-.PHONY : src/product.cpp.o
+src/address.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/address.cpp.o
+.PHONY : src/address.cpp.o
 
-src/product.i: src/product.cpp.i
-.PHONY : src/product.i
+src/address.i: src/address.cpp.i
+.PHONY : src/address.i
 
 # target to preprocess a source file
-src/product.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/product.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/product.cpp.i
-.PHONY : src/product.cpp.i
+src/address.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/address.cpp.i
+.PHONY : src/address.cpp.i
 
-src/product.s: src/product.cpp.s
-.PHONY : src/product.s
+src/address.s: src/address.cpp.s
+.PHONY : src/address.s
 
 # target to generate assembly for a file
-src/product.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/product.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/product.cpp.s
-.PHONY : src/product.cpp.s
+src/address.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/address.cpp.s
+.PHONY : src/address.cpp.s
 
-tests/utest-product.o: tests/utest-product.cpp.o
-.PHONY : tests/utest-product.o
+src/ambulance.o: src/ambulance.cpp.o
+.PHONY : src/ambulance.o
 
 # target to build an object file
-tests/utest-product.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/tests/utest-product.cpp.o
-.PHONY : tests/utest-product.cpp.o
+src/ambulance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/ambulance.cpp.o
+.PHONY : src/ambulance.cpp.o
 
-tests/utest-product.i: tests/utest-product.cpp.i
-.PHONY : tests/utest-product.i
+src/ambulance.i: src/ambulance.cpp.i
+.PHONY : src/ambulance.i
 
 # target to preprocess a source file
-tests/utest-product.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/tests/utest-product.cpp.i
-.PHONY : tests/utest-product.cpp.i
+src/ambulance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/ambulance.cpp.i
+.PHONY : src/ambulance.cpp.i
 
-tests/utest-product.s: tests/utest-product.cpp.s
-.PHONY : tests/utest-product.s
+src/ambulance.s: src/ambulance.cpp.s
+.PHONY : src/ambulance.s
 
 # target to generate assembly for a file
-tests/utest-product.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/tests/utest-product.cpp.s
-.PHONY : tests/utest-product.cpp.s
+src/ambulance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/ambulance.cpp.s
+.PHONY : src/ambulance.cpp.s
+
+src/appointment.o: src/appointment.cpp.o
+.PHONY : src/appointment.o
+
+# target to build an object file
+src/appointment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/appointment.cpp.o
+.PHONY : src/appointment.cpp.o
+
+src/appointment.i: src/appointment.cpp.i
+.PHONY : src/appointment.i
+
+# target to preprocess a source file
+src/appointment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/appointment.cpp.i
+.PHONY : src/appointment.cpp.i
+
+src/appointment.s: src/appointment.cpp.s
+.PHONY : src/appointment.s
+
+# target to generate assembly for a file
+src/appointment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/appointment.cpp.s
+.PHONY : src/appointment.cpp.s
+
+src/doctor.o: src/doctor.cpp.o
+.PHONY : src/doctor.o
+
+# target to build an object file
+src/doctor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/doctor.cpp.o
+.PHONY : src/doctor.cpp.o
+
+src/doctor.i: src/doctor.cpp.i
+.PHONY : src/doctor.i
+
+# target to preprocess a source file
+src/doctor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/doctor.cpp.i
+.PHONY : src/doctor.cpp.i
+
+src/doctor.s: src/doctor.cpp.s
+.PHONY : src/doctor.s
+
+# target to generate assembly for a file
+src/doctor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/doctor.cpp.s
+.PHONY : src/doctor.cpp.s
+
+src/driver.o: src/driver.cpp.o
+.PHONY : src/driver.o
+
+# target to build an object file
+src/driver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/driver.cpp.o
+.PHONY : src/driver.cpp.o
+
+src/driver.i: src/driver.cpp.i
+.PHONY : src/driver.i
+
+# target to preprocess a source file
+src/driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/driver.cpp.i
+.PHONY : src/driver.cpp.i
+
+src/driver.s: src/driver.cpp.s
+.PHONY : src/driver.s
+
+# target to generate assembly for a file
+src/driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/driver.cpp.s
+.PHONY : src/driver.cpp.s
+
+src/global.o: src/global.cpp.o
+.PHONY : src/global.o
+
+# target to build an object file
+src/global.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/global.cpp.o
+.PHONY : src/global.cpp.o
+
+src/global.i: src/global.cpp.i
+.PHONY : src/global.i
+
+# target to preprocess a source file
+src/global.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/global.cpp.i
+.PHONY : src/global.cpp.i
+
+src/global.s: src/global.cpp.s
+.PHONY : src/global.s
+
+# target to generate assembly for a file
+src/global.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/global.cpp.s
+.PHONY : src/global.cpp.s
+
+src/hospital.o: src/hospital.cpp.o
+.PHONY : src/hospital.o
+
+# target to build an object file
+src/hospital.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/hospital.cpp.o
+.PHONY : src/hospital.cpp.o
+
+src/hospital.i: src/hospital.cpp.i
+.PHONY : src/hospital.i
+
+# target to preprocess a source file
+src/hospital.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/hospital.cpp.i
+.PHONY : src/hospital.cpp.i
+
+src/hospital.s: src/hospital.cpp.s
+.PHONY : src/hospital.s
+
+# target to generate assembly for a file
+src/hospital.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/hospital.cpp.s
+.PHONY : src/hospital.cpp.s
+
+src/nurse.o: src/nurse.cpp.o
+.PHONY : src/nurse.o
+
+# target to build an object file
+src/nurse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/nurse.cpp.o
+.PHONY : src/nurse.cpp.o
+
+src/nurse.i: src/nurse.cpp.i
+.PHONY : src/nurse.i
+
+# target to preprocess a source file
+src/nurse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/nurse.cpp.i
+.PHONY : src/nurse.cpp.i
+
+src/nurse.s: src/nurse.cpp.s
+.PHONY : src/nurse.s
+
+# target to generate assembly for a file
+src/nurse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/nurse.cpp.s
+.PHONY : src/nurse.cpp.s
+
+src/patient.o: src/patient.cpp.o
+.PHONY : src/patient.o
+
+# target to build an object file
+src/patient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/patient.cpp.o
+.PHONY : src/patient.cpp.o
+
+src/patient.i: src/patient.cpp.i
+.PHONY : src/patient.i
+
+# target to preprocess a source file
+src/patient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/patient.cpp.i
+.PHONY : src/patient.cpp.i
+
+src/patient.s: src/patient.cpp.s
+.PHONY : src/patient.s
+
+# target to generate assembly for a file
+src/patient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/patient.cpp.s
+.PHONY : src/patient.cpp.s
+
+src/person.o: src/person.cpp.o
+.PHONY : src/person.o
+
+# target to build an object file
+src/person.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/person.cpp.o
+.PHONY : src/person.cpp.o
+
+src/person.i: src/person.cpp.i
+.PHONY : src/person.i
+
+# target to preprocess a source file
+src/person.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/person.cpp.i
+.PHONY : src/person.cpp.i
+
+src/person.s: src/person.cpp.s
+.PHONY : src/person.s
+
+# target to generate assembly for a file
+src/person.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/person.cpp.s
+.PHONY : src/person.cpp.s
 
 # Help Target
 help:
@@ -336,22 +502,44 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... run_opt"
-	@echo "... run_opt_test"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/product.o"
-	@echo "... src/product.i"
-	@echo "... src/product.s"
-	@echo "... tests/utest-product.o"
-	@echo "... tests/utest-product.i"
-	@echo "... tests/utest-product.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/address.o"
+	@echo "... src/address.i"
+	@echo "... src/address.s"
+	@echo "... src/ambulance.o"
+	@echo "... src/ambulance.i"
+	@echo "... src/ambulance.s"
+	@echo "... src/appointment.o"
+	@echo "... src/appointment.i"
+	@echo "... src/appointment.s"
+	@echo "... src/doctor.o"
+	@echo "... src/doctor.i"
+	@echo "... src/doctor.s"
+	@echo "... src/driver.o"
+	@echo "... src/driver.i"
+	@echo "... src/driver.s"
+	@echo "... src/global.o"
+	@echo "... src/global.i"
+	@echo "... src/global.s"
+	@echo "... src/hospital.o"
+	@echo "... src/hospital.i"
+	@echo "... src/hospital.s"
+	@echo "... src/nurse.o"
+	@echo "... src/nurse.i"
+	@echo "... src/nurse.s"
+	@echo "... src/patient.o"
+	@echo "... src/patient.i"
+	@echo "... src/patient.s"
+	@echo "... src/person.o"
+	@echo "... src/person.i"
+	@echo "... src/person.s"
 .PHONY : help
 
 
