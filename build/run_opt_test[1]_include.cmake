@@ -1,0 +1,5 @@
+if(EXISTS "/home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/run_opt_test[1]_tests.cmake")
+  include("/home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/build/run_opt_test[1]_tests.cmake")
+else()
+  add_test(run_opt_test_NOT_BUILT run_opt_test_NOT_BUILT)
+endif()
