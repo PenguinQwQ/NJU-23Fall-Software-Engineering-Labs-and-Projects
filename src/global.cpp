@@ -16,10 +16,19 @@ int power(int n, int exp)
     }
     return res;
 }
-int strToNum(string s)
-{
+int strToNum(string s) {
     int res = 0;
-    for (int i = 0; i < s.size(); i++)
-        res += ((s[s.size() - 1 - i] - '0') * power(10, i));
-    return res;
+    int sign = 1;
+    int startIdx = 0;
+
+    if (s[0] == '-') {
+        sign = -1;
+        startIdx = 1;
+    }
+
+    for (int i = startIdx; i < s.size(); i++) {
+        res = res * 10 + (s[i] - '0');
+    }
+
+    return sign * res;
 }
