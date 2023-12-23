@@ -160,6 +160,7 @@ CMakeFiles/run_opt_test.dir/tests/unittest.cpp.o: \
  /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/lib/nurse.hh \
  /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/lib/patient.hh \
  /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/lib/person.hh \
+ /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/lib/global.hh \
  /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame/googletest-main/googletest/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/limits \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \

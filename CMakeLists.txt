@@ -15,8 +15,17 @@ include_directories(lib)
 
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES
-    src/main.cpp
-    src/product.cpp
+    main.cpp
+    src/address.cpp
+    src/ambulance.cpp
+    src/doctor.cpp
+    src/appointment.cpp
+    src/driver.cpp
+    src/global.cpp
+    src/hospital.cpp
+    src/nurse.cpp
+    src/patient.cpp
+    src/person.cpp
 )
 
 # Add an executable with the above sources
@@ -32,7 +41,7 @@ target_include_directories(run_opt
 
 enable_testing()
 add_executable(run_opt_test
-  src/product.cpp tests/utest-product.cpp
+    src/global.cpp tests/unittest.cpp
 )
 
 target_link_libraries(run_opt_test GTest::gtest_main)

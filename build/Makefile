@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/hjr/Desktop/23Fall-Software-Engineering-Lab/gtest_frame
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -173,6 +183,19 @@ run_opt: cmake_check_build_system
 run_opt/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/build
 .PHONY : run_opt/fast
+
+#=============================================================================
+# Target rules for targets named run_opt_test
+
+# Build rule for target.
+run_opt_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_opt_test
+.PHONY : run_opt_test
+
+# fast build rule for target.
+run_opt_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/build
+.PHONY : run_opt_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -376,6 +399,7 @@ src/global.o: src/global.cpp.o
 # target to build an object file
 src/global.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/global.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/global.cpp.o
 .PHONY : src/global.cpp.o
 
 src/global.i: src/global.cpp.i
@@ -384,6 +408,7 @@ src/global.i: src/global.cpp.i
 # target to preprocess a source file
 src/global.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/global.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/global.cpp.i
 .PHONY : src/global.cpp.i
 
 src/global.s: src/global.cpp.s
@@ -392,6 +417,7 @@ src/global.s: src/global.cpp.s
 # target to generate assembly for a file
 src/global.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/global.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/global.cpp.s
 .PHONY : src/global.cpp.s
 
 src/hospital.o: src/hospital.cpp.o
@@ -490,6 +516,30 @@ src/person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/person.cpp.s
 .PHONY : src/person.cpp.s
 
+tests/unittest.o: tests/unittest.cpp.o
+.PHONY : tests/unittest.o
+
+# target to build an object file
+tests/unittest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/tests/unittest.cpp.o
+.PHONY : tests/unittest.cpp.o
+
+tests/unittest.i: tests/unittest.cpp.i
+.PHONY : tests/unittest.i
+
+# target to preprocess a source file
+tests/unittest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/tests/unittest.cpp.i
+.PHONY : tests/unittest.cpp.i
+
+tests/unittest.s: tests/unittest.cpp.s
+.PHONY : tests/unittest.s
+
+# target to generate assembly for a file
+tests/unittest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/tests/unittest.cpp.s
+.PHONY : tests/unittest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -502,11 +552,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... run_opt"
+	@echo "... run_opt_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -540,6 +592,9 @@ help:
 	@echo "... src/person.o"
 	@echo "... src/person.i"
 	@echo "... src/person.s"
+	@echo "... tests/unittest.o"
+	@echo "... tests/unittest.i"
+	@echo "... tests/unittest.s"
 .PHONY : help
 
 

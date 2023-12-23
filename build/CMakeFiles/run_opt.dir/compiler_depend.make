@@ -189,6 +189,7 @@ CMakeFiles/run_opt.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/limits \
+  ../lib/debug.h \
   ../lib/global.hh \
   ../lib/hospital.hh \
   /usr/include/c++/11/vector \
@@ -2355,6 +2356,8 @@ CMakeFiles/run_opt.dir/src/person.cpp.o: ../src/person.cpp \
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/vector:
+
+../lib/debug.h:
 
 /usr/include/c++/11/limits:
 
