@@ -8,7 +8,7 @@ using namespace std;
 class ambulance;
 class driver : public person
 {
-private:
+public:
     string licenseNumber;
     bool idle;
     friend class ambulance;

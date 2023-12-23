@@ -7,7 +7,7 @@ using namespace std;
 
 class appointment
 {
-private:
+public:
     int id;
     doctor D;
     patient P;

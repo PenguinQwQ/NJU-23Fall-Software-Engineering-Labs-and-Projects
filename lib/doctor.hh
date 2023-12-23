@@ -8,7 +8,7 @@ using namespace std;
 class appointment;
 class doctor : public person
 {
-private:
+public:
     string type;
     int appointmentsBooked;
     friend class appointment;

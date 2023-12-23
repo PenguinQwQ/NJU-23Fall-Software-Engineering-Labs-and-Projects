@@ -7,7 +7,7 @@ using namespace std;
 
 class person //abstract class
 {
-protected:
+public:
     int id;
     string firstName, lastName;
     char gender;

@@ -7,7 +7,7 @@ using namespace std;
 class appointment;
 class patient : public person
 {
-private:
+public:
     int height; //in cms;
     int weight; //in pounds;
     bool hospitalized;

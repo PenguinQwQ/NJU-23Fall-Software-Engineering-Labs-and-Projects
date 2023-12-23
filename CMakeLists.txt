@@ -41,7 +41,7 @@ target_include_directories(run_opt
 
 enable_testing()
 add_executable(run_opt_test
-    src/global.cpp src/address.cpp tests/unittest.cpp
+    src/global.cpp src/address.cpp src/doctor.cpp src/hospital.cpp src/appointment.cpp src/person.cpp src/patient.cpp src/driver.cpp src/ambulance.cpp src/nurse.cpp tests/unittest.cpp
 )
 
 target_link_libraries(run_opt_test GTest::gtest_main)

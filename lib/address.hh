@@ -5,7 +5,7 @@ using namespace std;
 
 class address
 {
-private:
+public:
     string line1, line2;
     string city;
     string state;

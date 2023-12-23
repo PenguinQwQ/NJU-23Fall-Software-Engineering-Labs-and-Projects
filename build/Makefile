@@ -306,6 +306,7 @@ src/ambulance.o: src/ambulance.cpp.o
 # target to build an object file
 src/ambulance.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/ambulance.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/ambulance.cpp.o
 .PHONY : src/ambulance.cpp.o
 
 src/ambulance.i: src/ambulance.cpp.i
@@ -314,6 +315,7 @@ src/ambulance.i: src/ambulance.cpp.i
 # target to preprocess a source file
 src/ambulance.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/ambulance.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/ambulance.cpp.i
 .PHONY : src/ambulance.cpp.i
 
 src/ambulance.s: src/ambulance.cpp.s
@@ -322,6 +324,7 @@ src/ambulance.s: src/ambulance.cpp.s
 # target to generate assembly for a file
 src/ambulance.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/ambulance.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/ambulance.cpp.s
 .PHONY : src/ambulance.cpp.s
 
 src/appointment.o: src/appointment.cpp.o
@@ -330,6 +333,7 @@ src/appointment.o: src/appointment.cpp.o
 # target to build an object file
 src/appointment.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/appointment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/appointment.cpp.o
 .PHONY : src/appointment.cpp.o
 
 src/appointment.i: src/appointment.cpp.i
@@ -338,6 +342,7 @@ src/appointment.i: src/appointment.cpp.i
 # target to preprocess a source file
 src/appointment.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/appointment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/appointment.cpp.i
 .PHONY : src/appointment.cpp.i
 
 src/appointment.s: src/appointment.cpp.s
@@ -346,6 +351,7 @@ src/appointment.s: src/appointment.cpp.s
 # target to generate assembly for a file
 src/appointment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/appointment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/appointment.cpp.s
 .PHONY : src/appointment.cpp.s
 
 src/doctor.o: src/doctor.cpp.o
@@ -354,6 +360,7 @@ src/doctor.o: src/doctor.cpp.o
 # target to build an object file
 src/doctor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/doctor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/doctor.cpp.o
 .PHONY : src/doctor.cpp.o
 
 src/doctor.i: src/doctor.cpp.i
@@ -362,6 +369,7 @@ src/doctor.i: src/doctor.cpp.i
 # target to preprocess a source file
 src/doctor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/doctor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/doctor.cpp.i
 .PHONY : src/doctor.cpp.i
 
 src/doctor.s: src/doctor.cpp.s
@@ -370,6 +378,7 @@ src/doctor.s: src/doctor.cpp.s
 # target to generate assembly for a file
 src/doctor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/doctor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/doctor.cpp.s
 .PHONY : src/doctor.cpp.s
 
 src/driver.o: src/driver.cpp.o
@@ -378,6 +387,7 @@ src/driver.o: src/driver.cpp.o
 # target to build an object file
 src/driver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/driver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/driver.cpp.o
 .PHONY : src/driver.cpp.o
 
 src/driver.i: src/driver.cpp.i
@@ -386,6 +396,7 @@ src/driver.i: src/driver.cpp.i
 # target to preprocess a source file
 src/driver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/driver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/driver.cpp.i
 .PHONY : src/driver.cpp.i
 
 src/driver.s: src/driver.cpp.s
@@ -394,6 +405,7 @@ src/driver.s: src/driver.cpp.s
 # target to generate assembly for a file
 src/driver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/driver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/driver.cpp.s
 .PHONY : src/driver.cpp.s
 
 src/global.o: src/global.cpp.o
@@ -429,6 +441,7 @@ src/hospital.o: src/hospital.cpp.o
 # target to build an object file
 src/hospital.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/hospital.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/hospital.cpp.o
 .PHONY : src/hospital.cpp.o
 
 src/hospital.i: src/hospital.cpp.i
@@ -437,6 +450,7 @@ src/hospital.i: src/hospital.cpp.i
 # target to preprocess a source file
 src/hospital.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/hospital.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/hospital.cpp.i
 .PHONY : src/hospital.cpp.i
 
 src/hospital.s: src/hospital.cpp.s
@@ -445,6 +459,7 @@ src/hospital.s: src/hospital.cpp.s
 # target to generate assembly for a file
 src/hospital.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/hospital.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/hospital.cpp.s
 .PHONY : src/hospital.cpp.s
 
 src/nurse.o: src/nurse.cpp.o
@@ -453,6 +468,7 @@ src/nurse.o: src/nurse.cpp.o
 # target to build an object file
 src/nurse.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/nurse.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/nurse.cpp.o
 .PHONY : src/nurse.cpp.o
 
 src/nurse.i: src/nurse.cpp.i
@@ -461,6 +477,7 @@ src/nurse.i: src/nurse.cpp.i
 # target to preprocess a source file
 src/nurse.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/nurse.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/nurse.cpp.i
 .PHONY : src/nurse.cpp.i
 
 src/nurse.s: src/nurse.cpp.s
@@ -469,6 +486,7 @@ src/nurse.s: src/nurse.cpp.s
 # target to generate assembly for a file
 src/nurse.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/nurse.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/nurse.cpp.s
 .PHONY : src/nurse.cpp.s
 
 src/patient.o: src/patient.cpp.o
@@ -477,6 +495,7 @@ src/patient.o: src/patient.cpp.o
 # target to build an object file
 src/patient.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/patient.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/patient.cpp.o
 .PHONY : src/patient.cpp.o
 
 src/patient.i: src/patient.cpp.i
@@ -485,6 +504,7 @@ src/patient.i: src/patient.cpp.i
 # target to preprocess a source file
 src/patient.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/patient.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/patient.cpp.i
 .PHONY : src/patient.cpp.i
 
 src/patient.s: src/patient.cpp.s
@@ -493,6 +513,7 @@ src/patient.s: src/patient.cpp.s
 # target to generate assembly for a file
 src/patient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/patient.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/patient.cpp.s
 .PHONY : src/patient.cpp.s
 
 src/person.o: src/person.cpp.o
@@ -501,6 +522,7 @@ src/person.o: src/person.cpp.o
 # target to build an object file
 src/person.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/person.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/person.cpp.o
 .PHONY : src/person.cpp.o
 
 src/person.i: src/person.cpp.i
@@ -509,6 +531,7 @@ src/person.i: src/person.cpp.i
 # target to preprocess a source file
 src/person.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/person.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/person.cpp.i
 .PHONY : src/person.cpp.i
 
 src/person.s: src/person.cpp.s
@@ -517,6 +540,7 @@ src/person.s: src/person.cpp.s
 # target to generate assembly for a file
 src/person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/person.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/person.cpp.s
 .PHONY : src/person.cpp.s
 
 tests/unittest.o: tests/unittest.cpp.o

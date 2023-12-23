@@ -8,7 +8,7 @@ using namespace std;
 
 class ambulance
 {
-private:
+public:
     int id;
     string model;
     string manufacturer;
