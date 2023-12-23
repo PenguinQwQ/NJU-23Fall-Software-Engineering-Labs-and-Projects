@@ -53,6 +53,22 @@ namespace
         EXPECT_LE((1 << 20) - 1, power(2, 20));
         EXPECT_EQ(7 * 7 * 7 * 7 * 7, power(7, 5));
     }
-    //Submodule 2:
+    //Submodule 2: address
+    TEST(address_addToStr, addToStr)
+    {
+        address addr;
+        addr.takeInput();
+        std::string str1 = addr.addToStr();
+        std::string str2 = "x`y`Nanjing`Jiangsu`210016`China";
+        EXPECT_EQ(str1, str2);
+    }
+    TEST(address_print, print)
+    {
+        address addr;
+        addr.takeInput();
+        addr.print();
+    }
+    // Module 3: Overall Testing
+    
 }
 

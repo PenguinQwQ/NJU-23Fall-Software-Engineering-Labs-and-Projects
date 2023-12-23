@@ -279,6 +279,7 @@ src/address.o: src/address.cpp.o
 # target to build an object file
 src/address.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/address.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/address.cpp.o
 .PHONY : src/address.cpp.o
 
 src/address.i: src/address.cpp.i
@@ -287,6 +288,7 @@ src/address.i: src/address.cpp.i
 # target to preprocess a source file
 src/address.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/address.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/address.cpp.i
 .PHONY : src/address.cpp.i
 
 src/address.s: src/address.cpp.s
@@ -295,6 +297,7 @@ src/address.s: src/address.cpp.s
 # target to generate assembly for a file
 src/address.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt.dir/build.make CMakeFiles/run_opt.dir/src/address.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_opt_test.dir/build.make CMakeFiles/run_opt_test.dir/src/address.cpp.s
 .PHONY : src/address.cpp.s
 
 src/ambulance.o: src/ambulance.cpp.o

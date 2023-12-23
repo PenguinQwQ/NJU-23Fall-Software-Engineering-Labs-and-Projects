@@ -19,6 +19,7 @@ address::address()
 }
 void address::takeInput()
 {
+    
     cout << "\nEnter address:\n";
     cout << "\nLine 1:\n";
     getline(cin >> ws, line1);
@@ -32,6 +33,15 @@ void address::takeInput()
     getline(cin >> ws, pinCode);
     cout << "\nCountry:\n";
     getline(cin >> ws, country);
+    
+   /*
+    line1 = "x";
+    line2 = "y";
+    city = "Nanjing";
+    state = "Jiangsu";
+    pinCode = "210016";
+    country = "China";
+    */
     return;
 }
 void address::print()
